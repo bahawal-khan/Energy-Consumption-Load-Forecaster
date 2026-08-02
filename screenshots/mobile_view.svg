@@ -1,0 +1,63 @@
+<svg viewBox="0 0 380 780" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mcard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#1C2128"/>
+    </linearGradient>
+    <linearGradient id="mfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3FB1F5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3FB1F5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- phone frame -->
+  <rect x="0" y="0" width="380" height="780" rx="34" fill="#05070A"/>
+  <rect x="10" y="10" width="360" height="760" rx="26" fill="#0E1117"/>
+
+  <text x="30" y="60" fill="#E6EDF3" font-family="Arial" font-size="20" font-weight="800">⚡ Load Forecaster</text>
+  <text x="30" y="82" fill="#8B949E" font-family="Arial" font-size="10">Pure ANN · TensorFlow/Keras</text>
+
+  <!-- KPI card -->
+  <rect x="24" y="104" width="332" height="130" rx="14" fill="url(#mcard)" stroke="#30363D"/>
+  <text x="44" y="134" fill="#8B949E" font-family="Arial" font-size="10" letter-spacing="1">PREDICTED LOAD</text>
+  <text x="44" y="176" fill="#3FB1F5" font-family="Arial" font-size="32" font-weight="800">22,779 kW</text>
+  <rect x="44" y="194" width="140" height="24" rx="12" fill="#3FD68A22" stroke="#3FD68A"/>
+  <text x="56" y="210" fill="#3FD68A" font-family="Arial" font-size="11" font-weight="700">✓ Stable Usage</text>
+
+  <!-- two small metric cards -->
+  <rect x="24" y="248" width="158" height="64" rx="12" fill="url(#mcard)" stroke="#30363D"/>
+  <text x="38" y="272" fill="#8B949E" font-family="Arial" font-size="9">24h Peak</text>
+  <text x="38" y="296" fill="#E6EDF3" font-family="Arial" font-size="17" font-weight="700">35,909 kW</text>
+
+  <rect x="198" y="248" width="158" height="64" rx="12" fill="url(#mcard)" stroke="#30363D"/>
+  <text x="212" y="272" fill="#8B949E" font-family="Arial" font-size="9">Test R²</text>
+  <text x="212" y="296" fill="#E6EDF3" font-family="Arial" font-size="17" font-weight="700">0.697</text>
+
+  <!-- chart -->
+  <text x="24" y="342" fill="#E6EDF3" font-family="Arial" font-size="14" font-weight="700">📈 24-Hour Forecast</text>
+  <rect x="24" y="356" width="332" height="230" rx="12" fill="url(#mcard)" stroke="#30363D"/>
+
+  <polyline points="50,510 80,530 110,538 140,528 170,505 200,472 230,452 260,445 290,430 320,415"
+            fill="none" stroke="#3FB1F5" stroke-width="2.5"/>
+  <polygon points="50,510 80,530 110,538 140,528 170,505 200,472 230,452 260,445 290,430 320,415 320,570 50,570"
+           fill="url(#mfill)"/>
+  <polygon points="230,452 235,444 240,452 235,460" fill="#F5573F"/>
+
+  <line x1="50" y1="570" x2="340" y2="570" stroke="#30363D"/>
+  <text x="46" y="586" fill="#8B949E" font-family="Arial" font-size="9">0</text>
+  <text x="185" y="586" fill="#8B949E" font-family="Arial" font-size="9">12</text>
+  <text x="326" y="586" fill="#8B949E" font-family="Arial" font-size="9">23</text>
+
+  <!-- input snapshot card -->
+  <rect x="24" y="604" width="332" height="150" rx="14" fill="url(#mcard)" stroke="#30363D"/>
+  <text x="44" y="632" fill="#E6EDF3" font-family="Arial" font-size="13" font-weight="700">Input Snapshot</text>
+  <g font-family="Arial" font-size="11" fill="#E6EDF3">
+    <text x="44" y="660">🌡️ Temperature: 24.0°C</text>
+    <text x="44" y="684">💧 Humidity: 55.0%</text>
+    <text x="44" y="708">🌬️ Wind Speed: 3.0 m/s</text>
+    <text x="44" y="732">🕐 Hour: 18:00</text>
+  </g>
+
+  <!-- home indicator -->
+  <rect x="150" y="756" width="80" height="5" rx="2.5" fill="#30363D"/>
+</svg>

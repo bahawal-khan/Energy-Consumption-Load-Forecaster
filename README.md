@@ -1,5 +1,17 @@
 # ⚡ Energy Consumption & Load Forecaster
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://energy-consumption-load-forecaster-c8yheidpzectqd6zsctxgy.streamlit.app/)
+
+### 📸 Preview
+
+<p align="center">
+  <img src="screenshots/desktop_view.svg" alt="Desktop dashboard view" width="800"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/mobile_view.svg" alt="Mobile responsive view" width="260"/>
+</p>
+
 A production-grade, end-to-end web app that forecasts electric power load
 using a **pure Artificial Neural Network (MLP)** in TensorFlow/Keras, built
 around the [Fedesoriano Electric Power Consumption dataset](https://www.kaggle.com/datasets/fedesoriano/electric-power-consumption)

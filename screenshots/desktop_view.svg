@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#1C2128"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3FB1F5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3FB1F5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="#0E1117"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="260" height="720" fill="#161B22" stroke="#30363D"/>
+  <circle cx="40" cy="46" r="10" fill="#8B949E"/>
+  <text x="60" y="52" fill="#E6EDF3" font-family="Arial" font-size="18" font-weight="700">Settings</text>
+  <text x="40" y="100" fill="#8B949E" font-family="Arial" font-size="13">Appearance</text>
+  <circle cx="48" cy="128" r="8" fill="#3FB1F5"/>
+  <text x="64" y="133" fill="#E6EDF3" font-family="Arial" font-size="13">Dark</text>
+  <circle cx="130" cy="128" r="8" fill="none" stroke="#8B949E"/>
+  <text x="146" y="133" fill="#8B949E" font-family="Arial" font-size="13">Light</text>
+  <line x1="24" y1="160" x2="236" y2="160" stroke="#30363D"/>
+
+  <text x="24" y="196" fill="#E6EDF3" font-family="Arial" font-size="15" font-weight="700">Forecast Inputs</text>
+  <g font-family="Arial" font-size="12" fill="#8B949E">
+    <text x="24" y="232">Temperature (°C)</text>
+    <rect x="24" y="242" width="212" height="6" rx="3" fill="#30363D"/>
+    <circle cx="130" cy="245" r="7" fill="#3FB1F5"/>
+
+    <text x="24" y="286">Humidity (%)</text>
+    <rect x="24" y="296" width="212" height="6" rx="3" fill="#30363D"/>
+    <circle cx="150" cy="299" r="7" fill="#3FB1F5"/>
+
+    <text x="24" y="340">Wind Speed (m/s)</text>
+    <rect x="24" y="350" width="212" height="6" rx="3" fill="#30363D"/>
+    <circle cx="90" cy="353" r="7" fill="#3FB1F5"/>
+
+    <text x="24" y="394">Hour of Day</text>
+    <rect x="24" y="404" width="212" height="6" rx="3" fill="#30363D"/>
+    <circle cx="170" cy="407" r="7" fill="#3FB1F5"/>
+  </g>
+
+  <!-- Main content -->
+  <text x="292" y="70" fill="#E6EDF3" font-family="Arial" font-size="32" font-weight="800">⚡ Energy Load Forecaster</text>
+  <text x="292" y="98" fill="#8B949E" font-family="Arial" font-size="15">Pure ANN (MLP) · Trained on real electric power consumption data</text>
+
+  <!-- KPI card 1 -->
+  <rect x="292" y="130" width="330" height="150" rx="16" fill="url(#card)" stroke="#30363D"/>
+  <text x="316" y="164" fill="#8B949E" font-family="Arial" font-size="11" letter-spacing="1">PREDICTED LOAD</text>
+  <text x="316" y="216" fill="#3FB1F5" font-family="Arial" font-size="40" font-weight="800">22,779 kW</text>
+  <rect x="316" y="236" width="150" height="26" rx="13" fill="#3FD68A22" stroke="#3FD68A"/>
+  <text x="330" y="253" fill="#3FD68A" font-family="Arial" font-size="12" font-weight="700">✓ Stable Baseline</text>
+
+  <!-- KPI card 2 -->
+  <rect x="638" y="130" width="256" height="70" rx="12" fill="url(#card)" stroke="#30363D"/>
+  <text x="658" y="158" fill="#8B949E" font-family="Arial" font-size="11">24h Peak Forecast</text>
+  <text x="658" y="184" fill="#E6EDF3" font-family="Arial" font-size="22" font-weight="700">35,909 kW</text>
+
+  <rect x="910" y="130" width="256" height="70" rx="12" fill="url(#card)" stroke="#30363D"/>
+  <text x="930" y="158" fill="#8B949E" font-family="Arial" font-size="11">Model Test MAE</text>
+  <text x="930" y="184" fill="#E6EDF3" font-family="Arial" font-size="22" font-weight="700">2,790 kW</text>
+
+  <rect x="638" y="212" width="256" height="70" rx="12" fill="url(#card)" stroke="#30363D"/>
+  <text x="658" y="240" fill="#8B949E" font-family="Arial" font-size="11">24h Baseline Forecast</text>
+  <text x="658" y="266" fill="#E6EDF3" font-family="Arial" font-size="22" font-weight="700">22,779 kW</text>
+
+  <rect x="910" y="212" width="256" height="70" rx="12" fill="url(#card)" stroke="#30363D"/>
+  <text x="930" y="240" fill="#8B949E" font-family="Arial" font-size="11">Model Test R²</text>
+  <text x="930" y="266" fill="#E6EDF3" font-family="Arial" font-size="22" font-weight="700">0.697</text>
+
+  <!-- Chart -->
+  <text x="292" y="330" fill="#E6EDF3" font-family="Arial" font-size="18" font-weight="700">📈 Predicted Load Across a 24-Hour Cycle</text>
+  <rect x="292" y="350" width="874" height="300" rx="12" fill="url(#card)" stroke="#30363D"/>
+
+  <polyline points="330,560 380,600 430,610 480,595 530,560 580,510 630,480 680,470 730,465 780,440 830,410 880,395 930,420 980,440 1030,430 1080,420 1120,415"
+            fill="none" stroke="#3FB1F5" stroke-width="3"/>
+  <polygon points="330,560 380,600 430,610 480,595 530,560 580,510 630,480 680,470 730,465 780,440 830,410 880,395 930,420 980,440 1030,430 1080,420 1120,415 1120,630 330,630"
+           fill="url(#fill)"/>
+  <polygon points="730,465 736,455 742,465 736,475" fill="#F5573F"/>
+
+  <line x1="330" y1="630" x2="1140" y2="630" stroke="#30363D"/>
+  <line x1="330" y1="360" x2="330" y2="630" stroke="#30363D"/>
+  <text x="330" y="648" fill="#8B949E" font-family="Arial" font-size="11">0</text>
+  <text x="720" y="648" fill="#8B949E" font-family="Arial" font-size="11">12</text>
+  <text x="1120" y="648" fill="#8B949E" font-family="Arial" font-size="11">23</text>
+  <text x="700" y="668" fill="#8B949E" font-family="Arial" font-size="12">Hour of Day</text>
+</svg>
