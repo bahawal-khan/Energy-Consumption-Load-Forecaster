@@ -1,0 +1,11 @@
+{
+  "features": [
+    "temperature",
+    "humidity",
+    "wind_speed",
+    "hour",
+    "day_of_week",
+    "is_holiday"
+  ],
+  "target": "power_zone1"
+}
