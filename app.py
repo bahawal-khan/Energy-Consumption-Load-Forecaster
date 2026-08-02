@@ -389,13 +389,13 @@ fig.update_layout(
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(0,0,0,0)",
     font=dict(color=t["text"]),
-    xaxis=dict(title="Hour of Day", gridcolor=t["chart_grid"], dtick=2),
-    yaxis=dict(title="Predicted Power (kW)", gridcolor=t["chart_grid"]),
+    xaxis=dict(title="Hour of Day", gridcolor=t["chart_grid"], dtick=2, automargin=True),
+    yaxis=dict(title="Predicted Power (kW)", gridcolor=t["chart_grid"], rangemode="tozero", automargin=True),
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-    margin=dict(t=30, b=10, l=10, r=10),
-    height=420,
+    margin=dict(t=30, b=40, l=50, r=20),
+    height=360,
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
 
 # ---------------------------------------------------------------------------
 # Context cards
